@@ -3,6 +3,7 @@ import { SideNavigation, navigationLabel } from "./SideNavigation";
 import { localizeAmericanDemo } from "../mock/americanSeedMigration";
 import { releasedTabs } from "../features/releaseTabs";
 import { CustomerInfo } from "./InfoComponents/CustomerInfo";
+import { MonthObrotyInfo } from "./InfoComponents/Obrot/MonthObrotyInfo";
 import { GeneralInfo } from "./InfoComponents/GeneralInfo";
 
 import toast from "react-hot-toast";
@@ -49,7 +50,7 @@ export default function HomePage() {
     | "ustalenia"
   >("general");
   const [initialFirKod, setInitialFirKod] = useState<string | null>(null);
-  const [, setInitialMonth] = useState<string | null>(null);
+  const [initialMonth, setInitialMonth] = useState<string | null>(null);
   const [, setInitialDay] = useState<string | null>(null);
   const [, setInitialTaskId] = useState<string | null>(null);
 
@@ -410,7 +411,12 @@ export default function HomePage() {
             />
           )}
 
-          
+          {activeTab === "monthObroty" && (
+            <MonthObrotyInfo
+              initialFirKod={initialFirKod}
+              initialMonth={initialMonth}
+            />
+          )}
 
           
 
