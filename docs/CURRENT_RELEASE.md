@@ -1,13 +1,13 @@
 # Current release
 
-Branch: `codex/00-foundation`
+Branch: `codex/01-dashboard`
 
-Previous step: `main`
+Previous step: `codex/00-foundation`
 
-Introduce routing, sign-in, the lavender design system, responsive navigation, shared UI, US demo fixtures and release checks.
+Add the task calendar, sales target summaries and equal-height revenue ranking cards.
 
-Installed tabs: none (foundation only).
+Installed tabs: general.
 
-Next step: `codex/01-dashboard`.
+Next step: `codex/02-customers`.
 
 See [PUBLISHING.md](PUBLISHING.md) before pushing or merging.
