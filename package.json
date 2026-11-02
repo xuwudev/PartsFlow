@@ -1,0 +1,45 @@
+{
+  "name": "partsflow-crm-showcase",
+  "version": "1.0.0",
+  "description": "PartsFlow CRM - Automotive B2B Sales & Distribution Platform (Portfolio Showcase Demo)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "vitest run --dir src",
+    "typecheck": "tsc --noEmit",
+    "verify:releases": "node scripts/verify-release-branches.cjs",
+    "format": "biome format",
+    "lint": "biome lint",
+    "check": "biome check"
+  },
+  "dependencies": {
+    "@impargo/react-here-maps": "^4.3.0",
+    "@tailwindcss/vite": "^4.0.6",
+    "@tanstack/devtools-vite": "^0.3.12",
+    "@tanstack/react-router": "^1.132.0",
+    "@tanstack/react-start": "^1.131.50",
+    "@vitejs/plugin-react": "^5.1.2",
+    "chart.js": "^4.5.1",
+    "date-fns": "^4.1.0",
+    "react": "^19.2.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.0",
+    "react-hot-toast": "^2.6.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.2.3",
+    "@types/three": "^0.181.0",
+    "baseline-browser-mapping": "^2.9.14",
+    "jsdom": "^27.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^7.1.7",
+    "vitest": "^3.0.5",
+    "web-vitals": "^5.1.0"
+  }
+}
