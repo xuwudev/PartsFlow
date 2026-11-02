@@ -10,6 +10,7 @@ import { SpadkiInfo } from "./InfoComponents/SpadkiInfo";
 import { GeneralInfo } from "./InfoComponents/GeneralInfo";
 import { ZwrotyInfo } from "./InfoComponents/ZwrotyInfo";
 import { KsoPlatInfo } from "./InfoComponents/KsoPlatInfo";
+import { MapInfo } from "./InfoComponents/MapInfo";
 
 import toast from "react-hot-toast";
 import { useRouter } from "@tanstack/react-router";
@@ -436,7 +437,7 @@ export default function HomePage() {
 
           
 
-          
+          {activeTab === "map" && <MapInfo />}
 
           
 
