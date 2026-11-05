@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { SideNavigation, navigationLabel } from "./SideNavigation";
 import { localizeAmericanDemo } from "../mock/americanSeedMigration";
 import { releasedTabs } from "../features/releaseTabs";
+import { GeneralInfo } from "./InfoComponents/GeneralInfo";
 
 import toast from "react-hot-toast";
 import { useRouter } from "@tanstack/react-router";
@@ -363,7 +364,17 @@ export default function HomePage() {
               <p className="text-sm text-gray-500 mt-3">Your account and workspace are ready.</p>
             </section>
           )}
-          
+          {activeTab === "general" && (
+            <GeneralInfo
+              onNavigate={(tab, filters) => {
+                if (filters?.firKod) setInitialFirKod(filters.firKod);
+                if (filters?.month) setInitialMonth(filters.month);
+                if (filters?.day) setInitialDay(filters.day);
+                if (filters?.taskId) setInitialTaskId(filters.taskId);
+                selectTab(tab);
+              }}
+            />
+          )}
 
           
 
