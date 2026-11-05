@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { SideNavigation, navigationLabel } from "./SideNavigation";
 import { localizeAmericanDemo } from "../mock/americanSeedMigration";
 import { releasedTabs } from "../features/releaseTabs";
+import { CustomerInfo } from "./InfoComponents/CustomerInfo";
 import { GeneralInfo } from "./InfoComponents/GeneralInfo";
 
 import toast from "react-hot-toast";
@@ -47,7 +48,7 @@ export default function HomePage() {
     | "map"
     | "ustalenia"
   >("general");
-  const [, setInitialFirKod] = useState<string | null>(null);
+  const [initialFirKod, setInitialFirKod] = useState<string | null>(null);
   const [, setInitialMonth] = useState<string | null>(null);
   const [, setInitialDay] = useState<string | null>(null);
   const [, setInitialTaskId] = useState<string | null>(null);
@@ -62,6 +63,7 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [impersonatingUserId, setImpersonatingUserId] = useState<string | null>(null);
 
+  const [toggleSearch, setToggleSearch] = useState(false);
   const [toggleNav, setToggleNav] = useState(false);
 
   const [isMobile, setIsMobile] = useState(false);
@@ -353,7 +355,28 @@ export default function HomePage() {
             {currentDate} · {currentWeekDay}
           </p>
 
-          
+          {activeTab === "customers" && (
+            <button
+              onClick={() => setToggleSearch((prev) => !prev)}
+              className="absolute right-3 rounded-full p-2 hover:bg-gray-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-4"
+              >
+                {" "}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                ></path>{" "}
+              </svg>
+            </button>
+          )}
         </div>
 
         <div className="flex-1 overflow-auto">
@@ -376,7 +399,16 @@ export default function HomePage() {
             />
           )}
 
-          
+          {activeTab === "customers" && (
+            <CustomerInfo
+              initialFirKod={initialFirKod}
+              showSearch={toggleSearch}
+              onShowObroty={(firKod) => {
+                setInitialFirKod(firKod);
+                selectTab("monthObroty");
+              }}
+            />
+          )}
 
           
 
