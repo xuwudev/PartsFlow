@@ -4,6 +4,7 @@ import { localizeAmericanDemo } from "../mock/americanSeedMigration";
 import { releasedTabs } from "../features/releaseTabs";
 import { CustomerInfo } from "./InfoComponents/CustomerInfo";
 import { MonthObrotyInfo } from "./InfoComponents/Obrot/MonthObrotyInfo";
+import { DayObrotyInfo } from "./InfoComponents/Obrot/DayObrotyInfo";
 import { GeneralInfo } from "./InfoComponents/GeneralInfo";
 
 import toast from "react-hot-toast";
@@ -51,7 +52,7 @@ export default function HomePage() {
   >("general");
   const [initialFirKod, setInitialFirKod] = useState<string | null>(null);
   const [initialMonth, setInitialMonth] = useState<string | null>(null);
-  const [, setInitialDay] = useState<string | null>(null);
+  const [initialDay, setInitialDay] = useState<string | null>(null);
   const [, setInitialTaskId] = useState<string | null>(null);
 
   const [user, setUser] = useState<string | null>(null);
@@ -418,7 +419,9 @@ export default function HomePage() {
             />
           )}
 
-          
+          {activeTab === "dayObroty" && (
+            <DayObrotyInfo initialDay={initialDay} />
+          )}
 
           
           
