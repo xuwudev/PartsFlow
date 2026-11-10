@@ -5,6 +5,7 @@ import { releasedTabs } from "../features/releaseTabs";
 import { CustomerInfo } from "./InfoComponents/CustomerInfo";
 import { MonthObrotyInfo } from "./InfoComponents/Obrot/MonthObrotyInfo";
 import { DayObrotyInfo } from "./InfoComponents/Obrot/DayObrotyInfo";
+import { GroupObrotyInfo } from "./InfoComponents/Obrot/GroupObrotyInfo";
 import { GeneralInfo } from "./InfoComponents/GeneralInfo";
 
 import toast from "react-hot-toast";
@@ -423,7 +424,7 @@ export default function HomePage() {
             <DayObrotyInfo initialDay={initialDay} />
           )}
 
-          
+          {activeTab === "groupObroty" && <GroupObrotyInfo />}
           
 
           
