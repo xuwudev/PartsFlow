@@ -4,8 +4,6 @@ A React and TypeScript demo for automotive B2B sales. The app uses a minimalist 
 
 ## Run locally
 
-Use `codex/00-foundation` or any later release branch. The initial `main` commit contains publishing documentation only.
-
 ```sh
 npm ci
 npm run dev
@@ -18,16 +16,6 @@ npm run typecheck
 npm test
 npm run build
 ```
-
-## Publish one tab at a time
-
-The project is split into **15 cumulative release branches**: an application foundation followed by 14 tabs. Each branch adds its own UI module and registers it in navigation. Later tabs are absent from earlier branches; dashboard links to unreleased tabs display a short notice.
-
-The shared mock engine and sample catalog live in the foundation because several tabs consume the same customers, tasks and financial data. Charts, calendars and other feature-specific UI arrive with the first tab that needs them.
-
-See [the publishing guide](docs/PUBLISHING.md) for the exact order, Git commands and merge instructions. [The release plan](docs/release-plan.json) lists each branch and its feature files. Suggested PR descriptions are in `docs/pull-requests/` on the corresponding branch.
-
-The working checkout is the final branch, `codex/14-activity-log`, so all tabs remain available locally. `codex/backup-complete-app` preserves the original complete app before the split and is not part of the publishing sequence.
 
 ## Check release branches
 
