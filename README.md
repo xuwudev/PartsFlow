@@ -1,6 +1,6 @@
 # PartsFlow CRM
 
-A React and TypeScript demo for automotive B2B sales. The app uses a minimalist lavender interface, English content, US customer profiles and USD amounts. Demo data runs locally in the browser; no backend or database is required.
+A React and TypeScript demo for automotive B2B sales. Demo data runs locally in the browser; no backend or database is required.
 
 ## Run locally
 
