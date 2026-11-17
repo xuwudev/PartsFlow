@@ -1,13 +1,13 @@
 # Current release
 
-Branch: `codex/05-revenue-by-category`
+Branch: `codex/06-revenue-decline`
 
-Previous step: `codex/04-daily-revenue`
+Previous step: `codex/05-revenue-by-category`
 
-Add category summaries, lavender charts, product drill-downs and customer/month filters backed by reconciled demo sales.
+Add customer sales decline comparisons and category details.
 
-Installed tabs: general, customers, monthObroty, dayObroty, groupObroty.
+Installed tabs: general, customers, monthObroty, dayObroty, groupObroty, spadki.
 
-Next step: `codex/06-revenue-decline`.
+Next step: `codex/07-returns`.
 
 See [PUBLISHING.md](PUBLISHING.md) before pushing or merging.
