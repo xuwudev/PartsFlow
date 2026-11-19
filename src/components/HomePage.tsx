@@ -8,6 +8,7 @@ import { DayObrotyInfo } from "./InfoComponents/Obrot/DayObrotyInfo";
 import { GroupObrotyInfo } from "./InfoComponents/Obrot/GroupObrotyInfo";
 import { SpadkiInfo } from "./InfoComponents/SpadkiInfo";
 import { GeneralInfo } from "./InfoComponents/GeneralInfo";
+import { ZwrotyInfo } from "./InfoComponents/ZwrotyInfo";
 
 import toast from "react-hot-toast";
 import { useRouter } from "@tanstack/react-router";
@@ -430,7 +431,7 @@ export default function HomePage() {
             <SpadkiInfo initialFirKod={initialFirKod} />
           )}
 
-          
+          {activeTab === "zwroty" && <ZwrotyInfo />}
 
           
 

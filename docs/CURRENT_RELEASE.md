@@ -1,13 +1,13 @@
 # Current release
 
-Branch: `codex/06-revenue-decline`
+Branch: `codex/07-returns`
 
-Previous step: `codex/05-revenue-by-category`
+Previous step: `codex/06-revenue-decline`
 
-Add customer sales decline comparisons and category details.
+Add return rates, customer breakdowns and period/revenue filters.
 
-Installed tabs: general, customers, monthObroty, dayObroty, groupObroty, spadki.
+Installed tabs: general, customers, monthObroty, dayObroty, groupObroty, spadki, zwroty.
 
-Next step: `codex/07-returns`.
+Next step: `codex/08-payments`.
 
 See [PUBLISHING.md](PUBLISHING.md) before pushing or merging.
