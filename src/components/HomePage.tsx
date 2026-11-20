@@ -9,6 +9,7 @@ import { GroupObrotyInfo } from "./InfoComponents/Obrot/GroupObrotyInfo";
 import { SpadkiInfo } from "./InfoComponents/SpadkiInfo";
 import { GeneralInfo } from "./InfoComponents/GeneralInfo";
 import { ZwrotyInfo } from "./InfoComponents/ZwrotyInfo";
+import { KsoPlatInfo } from "./InfoComponents/KsoPlatInfo";
 
 import toast from "react-hot-toast";
 import { useRouter } from "@tanstack/react-router";
@@ -445,7 +446,15 @@ export default function HomePage() {
           
           
 
-          
+          {activeTab === "ksoplat" && (
+            <KsoPlatInfo
+              initialFirKod={initialFirKod}
+              onNavigate={(tab, filters) => {
+                if (filters?.firKod) setInitialFirKod(filters.firKod);
+                selectTab(tab as any);
+              }}
+            />
+          )}
 
           {/* Komunikaty o braku uprawnień */}
           

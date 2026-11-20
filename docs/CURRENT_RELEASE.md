@@ -1,13 +1,13 @@
 # Current release
 
-Branch: `codex/07-returns`
+Branch: `codex/08-payments`
 
-Previous step: `codex/06-revenue-decline`
+Previous step: `codex/07-returns`
 
-Add return rates, customer breakdowns and period/revenue filters.
+Add receivables, payables, overdue balances and document details in USD.
 
-Installed tabs: general, customers, monthObroty, dayObroty, groupObroty, spadki, zwroty.
+Installed tabs: general, customers, monthObroty, dayObroty, groupObroty, spadki, zwroty, ksoplat.
 
-Next step: `codex/08-payments`.
+Next step: `codex/09-customer-map`.
 
 See [PUBLISHING.md](PUBLISHING.md) before pushing or merging.

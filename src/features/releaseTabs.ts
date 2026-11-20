@@ -6,5 +6,6 @@ export const releasedTabs: readonly string[] = [
   "dayObroty",
   "groupObroty",
   "spadki",
-  "zwroty"
+  "zwroty",
+  "ksoplat"
 ];
