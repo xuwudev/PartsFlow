@@ -1,13 +1,13 @@
 # Current release
 
-Branch: `codex/08-payments`
+Branch: `codex/09-customer-map`
 
-Previous step: `codex/07-returns`
+Previous step: `codex/08-payments`
 
-Add receivables, payables, overdue balances and document details in USD.
+Add US customer locations, operator/revenue filters and local location overrides.
 
-Installed tabs: general, customers, monthObroty, dayObroty, groupObroty, spadki, zwroty, ksoplat.
+Installed tabs: general, customers, monthObroty, dayObroty, groupObroty, spadki, zwroty, ksoplat, map.
 
-Next step: `codex/09-customer-map`.
+Next step: `codex/10-sales-targets`.
 
 See [PUBLISHING.md](PUBLISHING.md) before pushing or merging.
